@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='Find out about the meetup times and locations for the ATU Womens Soccer Club'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./custom.css" rel="stylesheet">
+    <title>Soccer Club</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ATUS - Clubs &amp; Societies</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Clubs.html">Clubs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Register.html">Register Club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="form-and-image-container">
+            <div id="card-form-container" class="container-fluid">
+                <div class="jumbotron" id="soccerRegistrationJumbotron">
+                    <div class="jumbotron-content">
+                        <h1>Soccer</h1>
+                    </div>
+                </div>
+
+                <form method="get" id="card-form" class="card">
+                    <div>
+                        <label for="maleOrFemaleTeam">Interested in...*</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="radio" class="btn-check" name="maleOrFemaleTeam" id="mensRadio"
+                                    autocomplete="off" value="mensTeam">
+                                <label class="btn" for="mensRadio" style="width: 100%;">Men's Team</label>
+                            </div>
+                            <div class="col-6">
+                                <input type="radio" class="btn-check" name="maleOrFemaleTeam" id="womensRadio"
+                                    autocomplete="off" value="womensTeam">
+                                <label class="btn" for="womensRadio" style="width: 100%;">Women's Team</label>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <h2 class="text-body-secondary">Personal Information</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>First Name*</label><br>
+                                <input type="text" name="firstName" id="firstName" required class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Last Name*</label><br>
+                                <input type="text" name="lastName" id="lastName" required class="form-control">
+                            </div>
+                        </div>
+                        <label>Date of Birth*</label><br>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth" required class="form-control">
+                        <label>Student ID*</label><br>
+                        <div class="input-group">
+                            <div class="input-group-text">S00</div>
+                            <input type="text" class="form-control" id="autoSizingInputGroup" name="studentId"
+                                id="studentId" required>
+                        </div>
+                        <hr>
+
+                        <h2 class="text-body-secondary">Contact Information</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="mobileNo">Mobile No*</label>
+                                <input type="tel" name="mobileNo" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email">Email*</label>
+                                <button type="button" class="input-information" data-bs-toggle="tooltip"
+                                    data-bs-html="true" data-bs-title="You can use your personal or college email">
+                                    ?
+                                </button>
+                                <input type="text" name="email" class="form-control" required>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <h2 class="text-body-secondary">Course Information</h2>
+                        <label for="course">Course*</label>
+                        <input type="text" name="course" required class="form-control">
+                        <label for="yearOfStudy">Current Year</label><br>
+                        <label><input type="radio" name="yearOfStudy" id="" value="year1" class="form-check-input">
+                            1st
+                            Year</label><br>
+                        <label><input type="radio" name="yearOfStudy" id="" value="year2" class="form-check-input">
+                            2nd
+                            Year</label><br>
+                        <label><input type="radio" name="yearOfStudy" id="" value="year3" class="form-check-input">
+                            3rd
+                            Year</label><br>
+                        <label><input type="radio" name="yearOfStudy" id="" value="year4" class="form-check-input">
+                            4th
+                            Year</label><br>
+                        <label><input type="radio" name="yearOfStudy" id="" value="year5OrHigher"
+                                class="form-check-input"> 5th Year+</label>
+                        <hr>
+
+                        <h2 class="text-body-secondary">Other Information</h2>
+                        <label>Club Name</label>
+                        <button type="button" class="input-information" data-bs-toggle="tooltip" data-bs-html="true"
+                            data-bs-title="If you already play for a team outside of college, enter their name here">
+                            ?
+                        </button>
+                        <input type="text" name="clubName" id="clubName" class="form-control">
+                        <lable>Prefered Position</label><br>
+                            <select class="form-select">
+                                <option value="">Select Position</option>
+                                <option value="Goalkeeper">Goalkeeper</option>
+                                <option value="RightFullback">Right Fullback</option>
+                                <option value="LeftFullback">Left Fullback</option>
+                                <option value="CenterBack">Center Back</option>
+                                <option value="CenterBackOrSweeper">Center Back or Sweeper</option>
+                                <option value="DefensiveMidfielder">Defensive Midfielder</option>
+                                <option value="RightMidfielderorWinger">Right Midfielder or Winger</option>
+                                <option value="CenterMidfielder">Center Midfielder</option>
+                                <option value="Striker">Striker</option>
+                                <option value="AttackingMidfielder">Attacking Midfielder</option>
+                                <option value="LeftMidfielderOrWinger">Left Midfielder or Winger</option>
+                            </select>
+                            <hr>
+                            <h2 class="text-body-secondary">Marketing</h2>
+                            <label for="marketingMethodPreferance">If you would like to be alerted to events and
+                                updates, select one ore more of the options below to stay up-to-date.</label><br>
+                            <input type="checkbox" name="smsMarketing" class="form-check-input"> SMS<br>
+                            <input type="checkbox" name="emailMarketing" class="form-check-input"> Email
+                            <hr>
+                            <h2 class="text-body-secondary">Data Protection</h2>
+                            <label for="consentToDataProtectionPolicy">Before you can register with our club, please
+                                consent to the Clubs &amp; Societies website's data protection policy.*</label>
+                            <div class="form-check"><input type="checkbox" name="consentToDataProtectionPolicy" id=""
+                                    class="form-check-input" required>I have read the policy and consent</div>
+
+                            <button class="btn btn-primary" id="register-button">Register</button>
+
+                            <!-- Successful registration toast -->
+                            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <strong class="me-auto">Successful Registration</strong>
+                                        <small>Just Now</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Congrats! You have just registered for the Soccer Club!
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="form-accent-image-container">
+                <div id="form-accent-image">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/tooltips.js"></script>
+</body>
+
+</html>

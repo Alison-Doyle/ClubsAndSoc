@@ -1,0 +1,161 @@
+:root {
+    --brand-color: #005b5e;
+    --primary-color: #ff791e;
+    --off-primary-color: #E05A00;
+    --secondary-color: #7bb9cb;
+}
+
+.center {
+    margin: auto;
+    width: fit-content;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: 0;
+}
+
+.btn-primary:hover {
+    background-color: var(--off-primary-color) !important;
+}
+
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: var(--off-primary-color) !important;
+    opacity: 0.8;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+}
+
+.hero-section {
+    background-image: url("./images/club_image.jpg");
+    padding: 4rem 2rem;
+}
+
+.jumbotron {
+    background-color: var(--brand-color);
+    border-radius: 12px;
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 50rem;
+    width: 80vw;
+}
+
+.jubotron-home {
+    width: fit-content;
+}
+
+.jumbotron-content {
+    margin: auto;
+    width: fit-content;
+}
+
+.card {
+    border-radius: 12px;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.card img {
+    border-radius: 12px 12px 0 0;
+    height: 16rem;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    padding: 0 0 0.2rem 0.8rem;
+    border-left: 5px solid var(--secondary-color);
+}
+
+footer {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+#home-footer {
+    bottom: 0;
+    position: fixed;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-and-image-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+#soccerRegistrationJumbotron {
+    padding: 0.8rem;
+    width: 100%;
+}
+
+#card-form {
+    padding: 2rem;
+}
+
+.input-information {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    margin: 0 0.2rem;
+    text-align: center;
+    width: 20px;
+}
+
+#form-accent-image-container {
+    display: flex;
+    flex-direction: column;
+    height: 94.2dvh;
+    width: 60%;
+}
+
+#form-accent-image {
+    background-image: url('./images/womans_soccer.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#register-button {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+@media screen and (max-width: 992px) {
+    #form-accent-image-container {
+        display: none;
+    }
+
+    #register-button {
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #card-form {
+        height: 76dvh;
+        overflow: scroll;
+    }
+
+    #card-form-container {
+        width: 40%;
+    }
+}
